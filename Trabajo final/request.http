@@ -1,0 +1,26 @@
+###Listar  usuarios
+GET http://localhost:8000/users/
+
+
+###Obtener un usuario
+GET http://localhost:8000/users/hola@.com 
+
+####Crear un usuario
+POST http://localhost:8000/users/
+content-type: application/json
+
+{
+    "email": "hoela@.com",
+    "password":"1234"
+}
+
+###Eliminar un usuario
+DELETE http://localhost:8000/users/hola@.com
+
+###Actualizar un usuario
+PUT http://localhost:8000/users/hola@.com
+
+{
+    "email": "hola@gmail.com",
+    "password":"abcd"
+}
